@@ -1,6 +1,11 @@
 import random
 import string
+from pytube import YouTube
 
+# Replace with your API key
+api_key = "AIzaSyBz5NX4HAyvsz4o8FvjTe9t8irKL5gNVY8"
+
+yt = YouTube("https://www.youtube.com/watch?v=K8KAbu45-kE", api_key=api_key)
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
