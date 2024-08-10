@@ -1,3 +1,9 @@
+#
+# Copyright (C) 2024 by 𓆩𔘓𓆪 𝐕⊶𝐈⊶𝐊⊶𝐑⊶𝐀⊶𝐍⊶𝐓 𓆩𔘓𓆪 Github-@vicky0604hello, 
+# < https://github.com/vicky0404hello >.
+# <https://github.com/vicky0604hello/DCxMUSIC >
+# All rights reserved.
+
 import asyncio
 import shlex
 from typing import Tuple
