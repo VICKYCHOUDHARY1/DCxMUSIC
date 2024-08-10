@@ -124,3 +124,5 @@ clear
 
 pprint "\n\n\nThanks for using DCxMUSIC installer, your vars have been saved successfully ! \nIf you wanna add more variables add them in your env by : vi .env"
 pprint "\n\nNow you can start the bot by : bash start\n\n"
+
+
