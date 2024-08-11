@@ -1,5 +1,5 @@
 import math
-from config import OWNER_ID
+import config
 from pyrogram.types import InlineKeyboardButton
 
 from DCxMUSIC.utils.formatters import time_to_seconds
