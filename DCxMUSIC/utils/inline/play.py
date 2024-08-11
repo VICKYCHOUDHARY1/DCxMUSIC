@@ -1,5 +1,5 @@
 import math
-
+from config import OWNER_ID
 from pyrogram.types import InlineKeyboardButton
 
 from DCxMUSIC.utils.formatters import time_to_seconds
@@ -66,6 +66,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
+        [InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID)],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
