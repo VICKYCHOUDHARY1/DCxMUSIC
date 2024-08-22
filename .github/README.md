@@ -7,12 +7,12 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VICKYCHOUDARY1&repo=DCxMUSIC&theme=flag-india)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VICKYCHOUDHARY1&repo=DCxMUSIC&theme=flag-india)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
  [![GIF](https://github.com/vicky0604hello/DCxMUSIC/blob/main/DCxMUSIC.gif)](https://github.com/vicky0604hello)
-   [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDARY1 "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=vicky0604hello "VIKRANT")
+   [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY1 "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY "VIKRANT")
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
@@ -28,7 +28,7 @@
     𝐃𝐄𝐏𝐋𝐎𝐘 𝐎𝐍 𝐇𝐄𝐑𝐎𝐊𝐔
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/vicky0604hello/DCxMUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/VICKYCHOUDHARY1/DCxMUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
