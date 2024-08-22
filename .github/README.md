@@ -7,12 +7,12 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=vicky0604hello&repo=DCxMUSIC&theme=flag-india)
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VICKYCHOUDARY1&repo=DCxMUSIC&theme=flag-india)
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
  [![GIF](https://github.com/vicky0604hello/DCxMUSIC/blob/main/DCxMUSIC.gif)](https://github.com/vicky0604hello)
-   [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=vicky0604hello "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=vicky0604hello "VIKRANT")
+   [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDARY1 "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=vicky0604hello "VIKRANT")
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
