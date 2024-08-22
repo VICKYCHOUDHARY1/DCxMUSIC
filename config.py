@@ -61,7 +61,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 #---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/vicky0604hello/DCxMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VICKYCHOUDHARY1/DCxMUSIC")
 
 #---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X---X
 
