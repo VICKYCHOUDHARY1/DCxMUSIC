@@ -1,7 +1,7 @@
 #
-# Copyright (C) 2024 by 𓆩𔘓𓆪 𝐕⊶𝐈⊶𝐊⊶𝐑⊶𝐀⊶𝐍⊶𝐓 𓆩𔘓𓆪 Github-@vicky0604hello, 
+# Copyright (C) 2024 by 𓆩𔘓𓆪 𝐕⊶𝐈⊶𝐊⊶𝐑⊶𝐀⊶𝐍⊶𝐓 𓆩𔘓𓆪 Github-@VICKYCHOUDHARY1, 
 # < https://github.com/vicky0404hello >.
-# <https://github.com/vicky0604hello/DCxMUSIC >
+# <https://github.com/VICKYCHOUDHARY1/DCxMUSIC >
 # All rights reserved.
 
 from pyrogram import Client

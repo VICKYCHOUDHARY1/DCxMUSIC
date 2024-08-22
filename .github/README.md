@@ -11,7 +11,7 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
- [![GIF](https://github.com/vicky0604hello/DCxMUSIC/blob/main/DCxMUSIC.gif)](https://github.com/vicky0604hello)
+ [![GIF](https://github.com/VICKYCHOUDHARY1/DCxMUSIC/blob/main/DCxMUSIC.gif)](https://github.com/VICKYCHOUDHARY1)
    [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY1 "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY "VIKRANT")
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -20,7 +20,7 @@
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center">
-<a href="https://github.com/vicky0604hello/DCxMUSIC/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/VICKYCHOUDHARY1/DCxMUSIC/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -35,7 +35,7 @@
 </h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-- [𝐆𝐄𝐓 𝐘𝐎𝐔𝐑 𝐍𝐄𝐂𝐄𝐒𝐒𝐀𝐑𝐘 𝐕𝐀𝐑𝐈𝐀𝐁𝐋𝐄𝐒](https://github.com/vicky0604hello/DCxMUSIC/blob/master/sample.env)
+- [𝐆𝐄𝐓 𝐘𝐎𝐔𝐑 𝐍𝐄𝐂𝐄𝐒𝐒𝐀𝐑𝐘 𝐕𝐀𝐑𝐈𝐀𝐁𝐋𝐄𝐒](https://github.com/VICKYCHOUDHARY1/DCxMUSIC/blob/master/sample.env)
 
 <h3>
   𝐆𝐈𝐕𝐄 𝐓𝐇𝐄𝐒𝐄 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 𝐘𝐎𝐔𝐑 𝐕𝐏𝐒 𝐎𝐑 𝐋𝐎𝐂𝐀𝐋 𝐇𝐎𝐒𝐓
@@ -61,7 +61,7 @@
       ```
 5. **Clone the Repository**
    ```bash
-   git clone https://github.com/vicky0604hello/DCxMUSIC && cd DCxMUSIC
+   git clone https://github.com/VICKYCHOUDHARY1/DCxMUSIC && cd DCxMUSIC
    ```
 6. **Install Requirements**
    ```bash
@@ -95,7 +95,7 @@
 
 
 
-  <p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=vicky0604hello&show_icons=true&locale=en&layout=compact" alt="DC MUSIC" /></p>
+  <p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=VICKYCHOUDHARY1&show_icons=true&locale=en&layout=compact" alt="DC MUSIC" /></p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -123,7 +123,7 @@
 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐓𝐎𝐑𝐒
 </h2>
 
-[![Contributors](https://contrib.rocks/image?repo=vicky0604hello/DCxMUSIC)](https://github.com/vicky0604hello/DCxMUSICS/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=VICKYCHOUDHARY1/DCxMUSIC)](https://github.com/VICKYCHOUDHARY1/DCxMUSICS/graphs/contributors)
 
 
 
