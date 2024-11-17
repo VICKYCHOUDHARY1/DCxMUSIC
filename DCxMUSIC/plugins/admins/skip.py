@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from DCxMUSIC import YouTube, app, YTB
+from DCxMUSIC import YouTube, app
 from DCxMUSIC.core.call import DC
 from DCxMUSIC.misc import db
 from DCxMUSIC.utils.database import get_loop

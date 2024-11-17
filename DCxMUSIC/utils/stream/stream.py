@@ -5,7 +5,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from DCxMUSIC import Carbon, YouTube, app, YTB
+from DCxMUSIC import Carbon, YouTube, app
 from DCxMUSIC.core.call import DC
 from DCxMUSIC.misc import db
 from DCxMUSIC.utils.database import add_active_video_chat, is_active_chat

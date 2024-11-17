@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from DCxMUSIC import YouTube, app, YTB
+from DCxMUSIC import YouTube, app
 from DCxMUSIC.core.call import DC
 from DCxMUSIC.misc import SUDOERS, db
 from DCxMUSIC.utils.database import (
