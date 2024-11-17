@@ -1,7 +1,4 @@
 import asyncio
-import aiohttp
-import requests
-import httpx
 import os
 import re
 from typing import Union
@@ -13,7 +10,6 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from DCxMUSIC.utils.database import is_on_off
 from DCxMUSIC.utils.formatters import time_to_seconds
-
 
 async def shell_cmd(cmd):
     proc = await asyncio.create_subprocess_shell(
@@ -29,6 +25,8 @@ async def shell_cmd(cmd):
             return errorz.decode("utf-8")
     return out.decode("utf-8")
 
+
+cookies_file = "DCxMUSIC/assets/cookies.txt"
 
 class YouTubeAPI:
     def __init__(self):
@@ -124,6 +122,7 @@ class YouTubeAPI:
             link = link.split("&")[0]
         proc = await asyncio.create_subprocess_exec(
             "yt-dlp",
+            "--cookies", cookies_file,
             "-g",
             "-f",
             "best[height<=?720][width<=?1280]",
@@ -143,7 +142,7 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         playlist = await shell_cmd(
-            f"yt-dlp -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
+            f"yt-dlp --cookies {cookies_file} -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
         )
         try:
             result = playlist.split("\n")
@@ -180,7 +179,7 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        ytdl_opts = {"quiet": True}
+        ytdl_opts = {"quiet": True, "cookiefile": cookies_file}
         ydl = yt_dlp.YoutubeDL(ytdl_opts)
         with ydl:
             formats_available = []
@@ -246,12 +245,13 @@ class YouTubeAPI:
 
         def audio_dl():
             ydl_optssx = {
-                "format": "bestaudio/[ext=m4a]",
+                "format": "bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "cookiefile": cookies_file,
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -269,6 +269,7 @@ class YouTubeAPI:
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "cookiefile": cookies_file,
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             info = x.extract_info(link, False)
@@ -290,6 +291,7 @@ class YouTubeAPI:
                 "no_warnings": True,
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
+                "cookiefile": cookies_file,  # Add cookie file option here
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -311,6 +313,7 @@ class YouTubeAPI:
                         "preferredquality": "192",
                     }
                 ],
+                "cookiefile": cookies_file,  # Add cookie file option here
             }
             x = yt_dlp.YoutubeDL(ydl_optssx)
             x.download([link])
@@ -324,12 +327,13 @@ class YouTubeAPI:
             fpath = f"downloads/{title}.mp3"
             return fpath
         elif video:
-            if await is_on_off(config.YTDOWNLOADER):
+            if await is_on_off(1):
                 direct = True
                 downloaded_file = await loop.run_in_executor(None, video_dl)
             else:
                 proc = await asyncio.create_subprocess_exec(
                     "yt-dlp",
+                    "--cookies", cookies_file,
                     "-g",
                     "-f",
                     "best[height<=?720][width<=?1280]",
@@ -346,67 +350,4 @@ class YouTubeAPI:
         else:
             direct = True
             downloaded_file = await loop.run_in_executor(None, audio_dl)
-        return downloaded_file, direct
-
-
-class YTM:
-    def __init__(self):
-        self.base = "https://www.youtube.com/watch?v="
-        self.regex = r"(?:youtube\.com|youtu\.be)"
-        self.status = "https://www.youtube.com/oembed?url="
-        self.listbase = "https://youtube.com/playlist?list="
-        self.reg = re.compile(r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])")
-
-
-    async def download(
-        self,
-        link: str,
-        mystic,
-        video: Union[bool, str] = None,
-        videoid: Union[bool, str] = None,
-        songaudio: Union[bool, str] = None,
-        songvideo: Union[bool, str] = None,
-        format_id: Union[bool, str] = None,
-        title: Union[bool, str] = None,
-    ) -> str:
-        if videoid:
-            vidid =  link
-        else:
-            pattern = r"(?:https?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=|embed\/|v\/|live_stream\?stream_id=|(?:\/|\?|&)v=)?([^&\n]+)"
-            match = re.search(pattern, link)
-            vidid = match.group(1)
-
-        async def download(url, format):
-            async with httpx.AsyncClient(http2=True) as client:
-                response = await client.get(url)
-                file_path = os.path.join("downloads", f"{vidid}.{format}")
-                with open(file_path, 'wb') as file:
-                    file.write(response.content)
-                return file_path
-
-
-       
-        response =  requests.get(f"https://pipedapi-libre.kavin.rocks/streams/{vidid}").json()
-        loop = asyncio.get_running_loop()
-
-        if songvideo:
-
-            url = response.get("videoStreams", [])[-1]['url']
-            fpath = await loop.run_in_executor(None, lambda: asyncio.run(download(url, "mp4")))
-            return fpath
-
-        elif songaudio:
-             return response.get("audioStreams", [])[4]["url"]  
-
-
-        elif video:
-            url = response.get("videoStreams", [])[-1]['url']
-            direct = True
-            downloaded_file = await loop.run_in_executor(None, lambda: asyncio.run(download(url, "mp4")))
-
-
-        else:
-            direct = True
-            downloaded_file = response.get("audioStreams", [])[4]["url"]  
-
         return downloaded_file, direct
